@@ -5,6 +5,11 @@ import behavioral.chainofresponsability.handler.UserNotExpiredHandler;
 import behavioral.chainofresponsability.handler.ValidPasswordHandler;
 import behavioral.chainofresponsability.handler.Handler;
 
+/*
+ * Este patrón permite delegar una operación a lo largo de una cadena de objetos hasta 
+ * encontrar al eslabón que puede realizar la acción. Su diseño permite la generación de 
+ * cadenas dinámicas durante la ejecución del programa, cambiando el comportamiento del componente.
+ */
 public class Main {
 
     public static void main(String[] args) {

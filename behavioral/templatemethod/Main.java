@@ -1,5 +1,9 @@
 package behavioral.templatemethod;
 
+/*
+ * Este patrón permite definir el esqueleto de un algoritmo para luego implementar los detalles 
+ * del mismo mediante herencia, sin cambiar la estructura del algoritmo. 
+ */
 public class Main {
 
     public static void main(String[] args) {

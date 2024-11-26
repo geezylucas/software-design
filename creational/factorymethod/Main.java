@@ -5,6 +5,11 @@ import creational.factorymethod.cars.NissanFactory;
 import creational.factorymethod.cars.ToyotaFactory;
 import creational.factorymethod.products.Car;
 
+/*
+ * Patrón creacional que provee una interfaz o clase abstracta (creator) que permite encapsular 
+ * la lógica de creación de los objetos en subclases. Las subclases deciden qué clase instanciar.
+ * Los objetos se crean a partir de un método y no a través de un constructor como se hace normalmente.
+ */
 public class Main {
 
     public static void main(String[] args) {

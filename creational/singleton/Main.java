@@ -1,5 +1,10 @@
 package creational.singleton;
 
+/* 
+ * El patrón singleton resuelve el problema de mantener una única instancia de una clase en memoría 
+ * durante la ejecución. Este patrón se comporta como un objeto global donde cualquier 
+ * parte de la aplicación la puede utilizar.
+ */
 public class Main {
 
     public static void main(String[] args) {

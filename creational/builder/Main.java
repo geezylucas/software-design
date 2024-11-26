@@ -1,5 +1,11 @@
 package creational.builder;
 
+/*
+ * Patrón creacional que permite la creación de diferentes representaciones de un objeto. 
+ * Se utiliza en situaciones en las que que el objeto tiene una gran cantidad de atributos en el constructor 
+ * por lo que la construcción se realiza en un conjunto de pasos. 
+ * También se suele usar este patrón para construir objectos inmutables. 
+ */
 public class Main {
 
 	public static void main(String[] args) {

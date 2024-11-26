@@ -1,5 +1,10 @@
 package behavioral.observer;
 
+/*
+ * El patrón observador (observer en inglés) describe una solución que se asemeja al manejo de eventos. 
+ * Principalmente es utilizado para permitir que ciertos objetos puedan reaccionar a los cambios que suceden 
+ * en un momento dado entre objetos. 
+ */
 public class Main {
 
     public static void main(String[] args) {
