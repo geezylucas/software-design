@@ -9,7 +9,17 @@
  */
 
 // MAL
+
+import java.util.List;
+
 class DatabaseService {
+
+    public List<User> getData() {
+        // ...
+    }
+}
+
+class APIService {
 
     public List<User> getData() {
         // ...
@@ -18,16 +28,22 @@ class DatabaseService {
 
 class DataAccess {
 
-    private DatabaseService databaseService;
+    private APIService databaseService;
 
-    public DataAccess(DatabaseService databaseService) {
+    public DataAccess(APIService databaseService) {
         this.databaseService = databaseService;
     }
 
     public List<User> getData() {
-        return databaseService.getData();
+        
+        List<User> users = databaseService.getData();
+        users.forEach(user -> user.setCreationDate(//....));
     }
 }
+
+DataAccess access = new DataAccess(new APIService());
+access.getData();
+
 
 // BIEN
 interface Connection {
@@ -36,6 +52,14 @@ interface Connection {
 }
 
 class DatabaseService implements Connection {
+
+    @Override
+    public List<User> getData() { 
+        // ... 
+    }
+}
+
+class APIService implements Connection {
 
     @Override
     public List<User> getData() { 
@@ -63,3 +87,5 @@ class DataAccess {
         return connection.getData();
     }
 }
+
+DataAccess access = new DataAccess(new APIService());

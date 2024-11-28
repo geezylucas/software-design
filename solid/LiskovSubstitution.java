@@ -9,7 +9,8 @@
 Car[] cars = {  
     new Ferrari(),
     new Mazda(),
-    new Tesla()
+    new Tesla(),
+    new Mercedes()
 };
 
 public static void printCatSeats(Car[] cars) {  
@@ -50,10 +51,20 @@ class Tesla extends Car {
     }
 }
 
+class Mercedes extends Car {
+
+    // ...
+    @Override
+    int numSeats() {
+        return 3;
+    }
+}
+
 public static void printCatSeats(Car[] cars){  
     for (Car car : cars) {
         System.out.println(car.numSeats());
     }
 }
 
-printCatSeats(cars);
+printCarSeats({new Tesla(), new Ferrari(), new Mercedes()});
+
